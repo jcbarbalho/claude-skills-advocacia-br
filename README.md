@@ -48,6 +48,12 @@ Valem para todos os arquivos e são o que mais vale copiar:
 | `due-diligence-leilao` | Due diligence de imóvel em leilão para quem quer arrematar: edital, matrícula, intimação do executado, preço vil, ônus, condomínio, ocupação, custo total e lance máximo a decidir pelo cliente. |
 | `markitdown` | Ler qualquer documento (docx, xlsx, pdf, pptx) como Markdown, e quando não usar. |
 
+### Scripts (`scripts/`)
+
+| Script | O que faz |
+|---|---|
+| [`push-legislativo`](scripts/push-legislativo/) | Segue proposições da Câmara dos Deputados pela API de Dados Abertos e avisa (relatório diário e Telegram, opcional) quando elas andam, com a classificação por código de tramitação que separa o que decide (parecer, votação, **urgência aprovada**) da rotina. Inclui um garimpo por área para descobrir o que seguir. Só biblioteca padrão do Python. |
+
 ## Testes feitos
 
 Os agentes novos foram testados **às cegas** contra um gabarito: o resultado que o escritório já

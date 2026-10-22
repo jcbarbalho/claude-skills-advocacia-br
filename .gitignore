@@ -1,0 +1,4 @@
+# dados locais do push legislativo (watchlist e relatórios)
+radar/
+__pycache__/
+*.pyc
