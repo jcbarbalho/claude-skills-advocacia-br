@@ -44,7 +44,7 @@ Valem para todos os arquivos e são o que mais vale copiar:
 | Skill | O que faz |
 |---|---|
 | `preparo-audiencia` | Roteiro de audiência (conciliação, ACIJ do JEC, AIJ, preliminar do JECrim): pontos controvertidos com ônus e prova, perguntas sem indução (art. 459 do CPC), contradita, acordo, alegações finais e orientação ao cliente. Adaptada do `deposition-prep` da Anthropic (ver NOTICE). |
-| `protocolar` | Checklist de protocolo de petição intermediária por API de peticionamento: registro certo (eproc × PJe, grau), quem peticiona e em que polo, resumo antes do "sim", e o pós-protocolo. |
+| `protocolar` | Protocolo de petição intermediária **feito para a API do [LegalMail](https://legalmail.com.br)**: registro certo (eproc × PJe, grau), quem peticiona e em que polo, resumo antes do "sim", e o pós-protocolo. O motor (um script próprio que chama a API) não está publicado. Para outro sistema de peticionamento vale o checklist, e o motor tem de ser reescrito. |
 | `due-diligence-leilao` | Due diligence de imóvel em leilão para quem quer arrematar: edital, matrícula, intimação do executado, preço vil, ônus, condomínio, ocupação, custo total e lance máximo a decidir pelo cliente. |
 | `markitdown` | Ler qualquer documento (docx, xlsx, pdf, pptx) como Markdown, e quando não usar. |
 
