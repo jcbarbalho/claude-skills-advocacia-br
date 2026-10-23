@@ -47,12 +47,14 @@ Valem para todos os arquivos e são o que mais vale copiar:
 | `protocolar` | Protocolo de petição intermediária **feito para a API do [LegalMail](https://legalmail.com.br)**: registro certo (eproc × PJe, grau), quem peticiona e em que polo, resumo antes do "sim", e o pós-protocolo. O motor (um script próprio que chama a API) não está publicado. Para outro sistema de peticionamento vale o checklist, e o motor tem de ser reescrito. |
 | `due-diligence-leilao` | Due diligence de imóvel em leilão para quem quer arrematar: edital, matrícula, intimação do executado, preço vil, ônus, condomínio, ocupação, custo total e lance máximo a decidir pelo cliente. |
 | `markitdown` | Ler qualquer documento (docx, xlsx, pdf, pptx) como Markdown, e quando não usar. |
+| `intake` | A ficha viva do caso (`intake.md`) em três momentos: **ler** antes de tudo, conferindo se a ficha é real ou só uma casca vazia; **criar** no caso novo, com Dados cadastrais e `completo: false`; e **atualizar** depois de cada ato. Usa os scripts de [`scripts/intake`](scripts/intake/). |
 
 ### Scripts (`scripts/`)
 
 | Script | O que faz |
 |---|---|
 | [`push-legislativo`](scripts/push-legislativo/) | Segue proposições da Câmara dos Deputados pela API de Dados Abertos e avisa (relatório diário e Telegram, opcional) quando elas andam, com a classificação por código de tramitação que separa o que decide (parecer, votação, **urgência aprovada**) da rotina. Inclui um garimpo por área para descobrir o que seguir. Só biblioteca padrão do Python. |
+| [`intake`](scripts/intake/) | `criar_intake.py` (ficha do caso no modelo da skill) e `checar_intake.py` (só leitura: 🔴 casca, 🟡 incompleta ou velha, ✅ ok, e as fichas das outras matérias do cliente). Só biblioteca padrão do Python. |
 
 ## Testes feitos
 
