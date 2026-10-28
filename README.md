@@ -54,6 +54,7 @@ Valem para todos os arquivos e são o que mais vale copiar:
 | Script | O que faz |
 |---|---|
 | [`push-legislativo`](scripts/push-legislativo/) | Segue proposições da Câmara dos Deputados pela API de Dados Abertos e avisa (relatório diário e Telegram, opcional) quando elas andam, com a classificação por código de tramitação que separa o que decide (parecer, votação, **urgência aprovada**) da rotina. Inclui um garimpo por área para descobrir o que seguir. Só biblioteca padrão do Python. |
+| [`jurimetria`](scripts/jurimetria/) | Jurimetria do TJRJ com fontes públicas (DJEN + DataJud): procedência e valor do dano moral por juízo, antes e depois da distribuição, e a **taxa de reforma do juiz** (não da vara), separando reforma no todo, em parte e anulação, com intervalo de confiança. Python + `requests`. |
 | [`intake`](scripts/intake/) | `criar_intake.py` (ficha do caso no modelo da skill) e `checar_intake.py` (só leitura: 🔴 casca, 🟡 incompleta ou velha, ✅ ok, e as fichas das outras matérias do cliente). Só biblioteca padrão do Python. |
 
 ## Testes feitos
