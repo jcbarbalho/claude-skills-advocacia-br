@@ -53,8 +53,8 @@ faz o recorte pelo juiz:
 
 **Como ler:**
 - **O número que decide é a reforma no todo.** "Alguma reforma" inclui o provimento em parte, que
-  no TJRJ costuma ser ajuste de juros, honorários ou valor, sem mudar quem venceu. Em um teste real, 39%
-  das sentenças de um juiz tiveram "alguma reforma", mas só 9% das improcedências dele viraram procedência.
+  no TJRJ costuma ser ajuste de juros, honorários ou valor, sem mudar quem venceu. Em um teste real, 38%
+  das sentenças de um juiz tiveram "alguma reforma", mas só 15% das improcedências dele viraram procedência.
 - Só entra o que foi apelado, e quem apela acha que vai ganhar (viés de seleção).
 - O DataJud não diz quem apelou. Na improcedência é, em regra, o autor.
 - Com n < 10 o relatório marca ⚠️.
