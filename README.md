@@ -47,6 +47,7 @@ Valem para todos os arquivos e são o que mais vale copiar:
 | `protocolar` | Protocolo de petição intermediária **feito para a API do [LegalMail](https://legalmail.com.br)**: registro certo (eproc × PJe, grau), quem peticiona e em que polo, resumo antes do "sim", e o pós-protocolo. O motor (um script próprio que chama a API) não está publicado. Para outro sistema de peticionamento vale o checklist, e o motor tem de ser reescrito. |
 | `due-diligence-leilao` | Due diligence de imóvel em leilão para quem quer arrematar: edital, matrícula, intimação do executado, preço vil, ônus, condomínio, ocupação, custo total e lance máximo a decidir pelo cliente. |
 | `markitdown` | Ler qualquer documento (docx, xlsx, pdf, pptx) como Markdown, e quando não usar. |
+| `caso-novo` | Abertura de caso em duas trilhas: **êxito direto** (abre tudo na hora) ou **negociação** (funil e proposta antes, pasta só no aceite). Procura antes de criar, não confunde homônimo, abre a pasta em nome de quem contrata e não presume honorário nem qualificação. Encadeia o `intake`. |
 | `intake` | A ficha viva do caso (`intake.md`) em três momentos: **ler** antes de tudo, conferindo se a ficha é real ou só uma casca vazia; **criar** no caso novo, com Dados cadastrais e `completo: false`; e **atualizar** depois de cada ato. Usa os scripts de [`scripts/intake`](scripts/intake/). |
 
 ### Scripts (`scripts/`)
@@ -96,14 +97,15 @@ recebe o método, não um sistema pronto:
 - `09. Legislação/`: corpus local de legislação federal e do TJRJ, um arquivo por lei, com âncora
   `### Art. N` por artigo e corpus de súmulas, temas repetitivos e de repercussão geral;
 - a biblioteca de teses do escritório e o seu espelho em texto;
-- integrações: LegalMail (peticionamento), Astrea (gestão de processos), DJEN (comunicações
-  processuais, API pública).
+- integrações: LegalMail (peticionamento), um sistema de gestão próprio (processos, prazos, funil de
+  negociação), DJEN (comunicações processuais, API pública).
 
 ### Convenções de pasta do original
 
 - Uma pasta por cliente e, dentro dela, uma por caso, com `intake.md` (ficha viva do caso),
   `Peças\` e `Documentos\`.
-- Minuta feita pela IA leva o sufixo `_CB` (`_CB_v1`, `_CB_v2`...). Revisão humana vira `_rev` + as iniciais do revisor.
+- Minuta feita pela IA leva o sufixo do assistente que a gerou (`_CB_v1`, `_AU_v1`...: um por
+  assistente). Revisão humana vira `_rev` + as iniciais do revisor.
 - `BASTÃO` é um arquivo de passagem de turno entre sessões do Claude Code: cada sessão lê ao
   começar e escreve ao terminar.
 

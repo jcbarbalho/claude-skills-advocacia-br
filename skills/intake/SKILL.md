@@ -65,7 +65,8 @@ ficha diz, só se ela parece real.
 
 ## 2. CRIAR: caso novo
 
-Logo depois de criar as pastas `Documentos`, `Peças` e `Honorários`:
+Logo depois de criar as pastas `Documentos`, `Peças` e `Honorários` (o roteiro inteiro de abertura
+está na skill [`/caso-novo`](../caso-novo/SKILL.md)):
 ```
 "$PY" "$PG/criar_intake.py" --pasta "<pasta do caso>" --cliente "<Cliente>" --adversario "<Adversário>" \
      --processo "<nº se houver>" --area "<Consumidor/Sucessões/...>" --papel <autor|reu> --resumo "<1 linha>"
@@ -89,9 +90,11 @@ Não esperar pedirem.
 4. **Pendências**: dar baixa no que se resolveu (`- [x] ✅ ... (data)`) e incluir o que o ato criou.
 5. Decisão ou correção de premissa do advogado vai para **Decisões e estratégia**, com a data e as
    palavras dele. É o que mais se perde.
+6. Leu a cópia integral dos autos? Registrar na ficha o que mudou desde a última leitura, com a
+   folha ou o evento de cada ato.
 
-O intake **não substitui** o sistema de gestão: são os dois, a timeline do sistema (cliente e
-relatório) e a ficha. E a ficha não gera tarefa: no judicial, a captura de andamentos já avisa; no
+O intake **não substitui** o sistema de gestão: são os dois, a timeline do sistema (andamentos e
+prazos) e a ficha. E a ficha não gera tarefa: no judicial, a captura de andamentos já avisa; no
 extrajudicial, todo ato tem follow-up agendado.
 
 ## 4. COMPLETAR uma casca ou uma ficha sem Dados cadastrais
